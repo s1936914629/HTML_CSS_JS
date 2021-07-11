@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number</title>
+    <script>
+        /*
+            可以使用一个运算符typeof
+                来检查一个变量的类型
+            语法：typeof 变量
+            检查字符串时，会返回string
+            检查数值时，会自动返回number
+        */
+
+        /*
+            在JS中所有的数值都是Number类型，
+                包括整数和浮点数(小数)
+
+            JS中可以表示的数字的最大值
+                -Number.MAX_VALUE
+
+            如果使用Number表示的数字超过了最大值，则会返回一个Infinity
+                Infinity 表示正无穷
+                -Infinity 表示负无穷
+                使用typeof 检查Infinity也会返回number
+        */ 
+
+        /*
+            如果使用JS进行浮点预算，可能得到一个不精确的结果
+                所以千万不要使用JS进行对精度要求比较高的运算
+        */ 
+       var a=Infinity;
+       console.log(typeof a);
+       var c=0.1+0.2;
+       console.log(c);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

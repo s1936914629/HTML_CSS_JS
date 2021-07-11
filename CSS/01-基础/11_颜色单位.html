@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>颜色单位</title>
+    <style>
+        /* 
+            颜色单位：
+                在css中可以直接使用颜色名来设置各种颜色
+                    比如：red，green,blue,orange,yellow: . . .
+                    但是在css中直接使用颜色名是非常不方便的
+
+                RGB值：
+                    -RGB通过三种颜色的不同浓度来调配出不同的颜色
+                    -R red, G green, B blue,
+                    -每一种颜色的范围在0~255(0%~100%)
+                    -语法：RGB(红色，绿色，蓝色)
+                
+                RGBA：
+                    -就是在GRB的基础上增加了一个a表示透明度
+                    -需要四个值，前三个个RGB一样，第四个表示透明度
+                        1表示不透明，0表示透明，0.5表示半透明
+                
+                十六进制的RGB值
+                    -语法：#红色绿色蓝色
+                    -颜色浓度通过00-ff
+                    -如果颜色两位两位重复可以进行简写
+                        #aabbcc -->#abc
+
+                HSL 和HSLA
+                    -H 色相 0-360
+                    -S 饱和度 0%-100%
+                    -H 亮度 0%-100%
+         */
+         .box{
+             width:100px;
+             height:100px;
+             background-color: red;
+             background-color:rgb(0, 0 ,255);
+             background-color:rgb(44,44,44);
+             background-color:rgba(0, 0 ,255,0.5);
+             background-color: #00ff59;
+             background-color: #ab0;
+             background-color: hsl(0, 100%, 50%);
+         }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

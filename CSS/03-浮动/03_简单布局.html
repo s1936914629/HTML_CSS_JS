@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>简单布局</title>
+    <style>
+        /* 设置头部 */
+        header,main,footer{
+            width:700px;
+            margin: 10px auto;
+        }
+        header{
+            height: 100px;
+            background-color: violet;
+        }
+
+        /* 设置主体 */
+        main{
+            height: 400px;
+            background-color: teal;
+        }
+        nav,article,aside{
+            height:100%;
+            float: left;
+            
+        }
+        /* 设置导航 */
+        nav{
+            width: 145px;
+            background-color:#080808;
+        }
+        /* 设置内容 */
+
+        article{
+            width: 400px;
+            background-color:#fad;
+            margin:0 5px;
+        }
+        /* 设置侧边栏 */
+        aside{
+            width: 145px;
+            background-color:#0f2;
+        }
+
+        /* 设置底部 */
+        footer{
+            height: 100px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- 创建头部 -->
+    <header></header>
+
+    <!-- 创建主体 -->
+    <main>
+        <!-- 左侧导航 -->
+        <nav></nav>
+        <!-- 中间内容 -->
+        <article></article>
+        <!-- 右边侧边栏 -->
+        <aside></aside>
+    </main>
+
+    <!-- 创建底部 -->
+    <footer></footer>
+</body>
+</html>

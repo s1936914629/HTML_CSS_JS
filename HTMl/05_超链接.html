@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>超链接</title>
+</head>
+<body>
+    <!-- 
+        超链接可以然给我们从一个页面跳转到其他页面，或者是当前页面的其他位置
+
+        使用a标签来定义超链接
+            属性：
+                href 指定跳转的目标路径
+                -值可以是一个外部的网站地址
+                -也可以是一个内部页面的地址
+
+        链接是一个行内元素，在a标签中可以嵌套除它自身以外的任何元素
+
+            target属性，用来指定超链接打开的位置
+                可选值：
+                     _self 默认值，在当前页面中打开超链接
+                     _blank 在一个新的页面中打开超链接
+
+        在开发中可以将#作为超链接的路径的占位符使用
+
+        可以使用javascript:;来作为href的属性，此时点击这个超链接什么也不会发生
+
+        可以直接将超链接的href属性设置为#,这样点击超链接以后页面不会发生跳转，而是转到当前页面的顶部位置
+
+        id属性(唯一不重复的)
+            -每一个标签都可以添加一个id属性
+            -id属性就是元素的唯一表示，同一个页面中不能出现重复的id属性
+     -->
+     <a href="./02_meta标签.html">超链接1</a>
+     <br><br>
+     <a href="https://www.bilibili.com/" target="_blank">超链接2</a>
+     <br><br>
+     <a href="#p3">找到第3段</a>
+     <br><br>
+     <a href="#dibu">去底部</a>
+     <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi culpa quisquam nulla iste eveniet! Molestiae in ullam rem, veritatis quia asperiores quisquam? Nostrum veritatis quibusdam ducimus alias quo, molestiae error.</P>
+     <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi culpa quisquam nulla iste eveniet! Molestiae in ullam rem, veritatis quia asperiores quisquam? Nostrum veritatis quibusdam ducimus alias quo, molestiae error.</P>
+     <P id="p3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi culpa quisquam nulla iste eveniet! Molestiae in ullam rem, veritatis quia asperiores quisquam? Nostrum veritatis quibusdam ducimus alias quo, molestiae error.</P>
+     <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi culpa quisquam nulla iste eveniet! Molestiae in ullam rem, veritatis quia asperiores quisquam? Nostrum veritatis quibusdam ducimus alias quo, molestiae error.</P>
+     <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi culpa quisquam nulla iste eveniet! Molestiae in ullam rem, veritatis quia asperiores quisquam? Nostrum veritatis quibusdam ducimus alias quo, molestiae error.</P>
+     <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi culpa quisquam nulla iste eveniet! Molestiae in ullam rem, veritatis quia asperiores quisquam? Nostrum veritatis quibusdam ducimus alias quo, molestiae error.</P>
+     <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi culpa quisquam nulla iste eveniet! Molestiae in ullam rem, veritatis quia asperiores quisquam? Nostrum veritatis quibusdam ducimus alias quo, molestiae error.</P>
+     <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi culpa quisquam nulla iste eveniet! Molestiae in ullam rem, veritatis quia asperiores quisquam? Nostrum veritatis quibusdam ducimus alias quo, molestiae error.</P>
+     <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi culpa quisquam nulla iste eveniet! Molestiae in ullam rem, veritatis quia asperiores quisquam? Nostrum veritatis quibusdam ducimus alias quo, molestiae error.</P>
+     <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi culpa quisquam nulla iste eveniet! Molestiae in ullam rem, veritatis quia asperiores quisquam? Nostrum veritatis quibusdam ducimus alias quo, molestiae error.</P>
+     <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi culpa quisquam nulla iste eveniet! Molestiae in ullam rem, veritatis quia asperiores quisquam? Nostrum veritatis quibusdam ducimus alias quo, molestiae error.</P>
+     <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi culpa quisquam nulla iste eveniet! Molestiae in ullam rem, veritatis quia asperiores quisquam? Nostrum veritatis quibusdam ducimus alias quo, molestiae error.</P>
+     <a href="#" id="dibu">回到顶部</a>
+     <br><br>
+     <a href="javascript:;">无操作的超链接</a>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>京东轮播图</title>
+    <link rel="stylesheet" href="./resets.css">
+    <style>
+        /* 设置图片容器 */
+        .img-list{
+            width: 590px;
+            height: 470px;
+            margin: 100px auto;
+            /* 为了使ul中的pointer相对于ul进行定位，而不是初始包含块 */
+            position: relative;
+        }
+
+        /* 设置li */
+        .img-list li{
+            position: absolute;
+        }
+        /* 修改元素的层级来指定图片 */
+        .img-list li:nth-child(1){
+            z-index:1;
+        }
+
+
+        /* 设置导航点的样式 */
+        .pointer{
+            position: absolute;
+            z-index: 9999;
+            bottom:10px;
+            left:10px;
+        }
+        .pointer a{
+            /* display: block; */
+            float:left;
+            width: 10px;
+            height: 10px;
+            margin:0 4px;
+            border-radius: 50%;
+            background-color:rgba(255, 255,255,0.6);
+             /* 将边框只设置到内容区，边框和内边距不具有背景颜色 */
+            background-clip:content-box;
+            border: 2px red transparent;
+            /* transparent透明的 */
+        }
+
+        .pointer a .active,
+        .pointer a:hover{
+            background-color: white;
+           
+            border: 2px solid  rgba(255, 255,255,0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="img-list">
+        <ul>
+            <li><a href="javascript:;"><img src="./img/轮播图/01.jpg"></a></li>
+            <li><a href="javascript:;"><img src="./img/轮播图/02.jpg"></a></li>
+            <li><a href="javascript:;"><img src="./img/轮播图/03.jpg"></a></li>
+            <li><a href="javascript:;"><img src="./img/轮播图/04.jpg"></a></li>
+            <li><a href="javascript:;"><img src="./img/轮播图/05.jpg"></a></li>
+            <li><a href="javascript:;"><img src="./img/轮播图/06.jpg"></a></li>
+            <li><a href="javascript:;"><img src="./img/轮播图/07.jpg"></a></li>
+            <li><a href="javascript:;"><img src="./img/轮播图/08.jpg"></a></li>
+            
+            <div class="pointer">
+                <a class="active" href="javascript:;"></a>
+                <a href="javascript:;"></a>
+                <a href="javascript:;"></a>
+                <a href="javascript:;"></a>
+                <a href="javascript:;"></a>
+                <a href="javascript:;"></a>
+                <a href="javascript:;"></a>
+                <a href="javascript:;"></a>
+            </div>
+        </ul>
+    </div>
+</body>
+</html>

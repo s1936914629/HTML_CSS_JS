@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>字体的简写属性</title>
+    <style>
+        /* 
+            font 可以设置字体相关的所有属性
+                语法：
+                    font：字体大小/行高 字体族(必须写)
+                    行高可以省略不写，如果不写使用默认值
+        */
+        div{
+            /* font-size: 50px;
+            font-family: 'Courier New', Courier, monospace; */
+
+            /* font:50px 'Courier New', Courier, monospace; */
+
+            /* 
+                font-weight 字重 字体的加粗
+                    可选值：
+                        normal 默认值 不加粗
+                        bold 加粗
+                        100-900 九个级别(没什么用)
+
+                font-style 字体风格
+                    可选值：
+                        normal 正常的
+                        italic 斜体
+            */
+
+            /* font-weight: bold;
+            font-style: italic; */
+
+            font:bold italic 50px 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <div>山本无忧，因雪白头</div>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网易新闻</title>
+    <link rel="stylesheet" href="./resets.css">
+    <style>
+        /* 去除超链接的下划线 */
+        a {
+            text-decoration: none;
+        }
+
+        /* 设置外侧容器样式 */
+        .news-wrapper {
+            width: 305px;
+            height: 280px;
+            background-color: antiquewhite;
+            /* 设置上边框 */
+            border-top: 1px solid #ddd;
+            /* 设置居中，方便观察 */
+            margin: 50px auto;
+        }
+
+        /* 设置标题 */
+        .news-title{
+            /* 为了边框和文字宽度一样，使h2为块元素 */
+            display:inline-block;
+            height: 35px;
+            /* 设置上边框 */
+            border-top:1px red solid;
+            /* 将h2上移，盖住上边框 */
+            margin-top: -1px;
+            padding-top: 5px;
+        }
+
+        /* 设置title中的超链接样式 */
+        .news-title a{
+            font-size: 16px;
+            color: #333;
+            /* 设置文字加粗 */
+            font-weight: bold;
+        }
+        /* 设置图片容器 */
+        .news-img{
+            height: 150px;
+        }
+
+        /* 设置图片的文字效果 */
+        .news-img .img-title{
+            font-weight: bold;
+            margin-top: -25px;
+            margin-left: 30px;
+            
+        }
+        /* 设置字体颜色 */
+        .img-title a{
+            color: #fff;
+        }
+
+        /* 设置列表 */
+        .news-list{
+            margin-top: 15px;
+            /* padding-left: 25px; */
+        }
+        /* 设置li */
+        .news-list li{
+            margin-top: 7px;;
+        }
+        /* 设置li的超链接 */
+        .news-list li a{
+            color: #4d4d4d;
+            font-size: 13px;
+        }
+        /* 用伪元素设置项目符号 */
+        .news-list li::before{
+            content:'■';
+            color:rgb(197, 195, 195);
+            padding-right: 10px;
+            font-size:8px;
+        }
+        /* 设置超链接的移入状态 */
+        .news-list li a:hover{
+            color:blue;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 创建外侧容器 -->
+    <div class="news-wrapper">
+        <!-- 创建标题标签 -->
+        <h2 class="news-title">
+            
+                <a href="#">军事</a>·<a href="#">航空</a>
+            </h2>
+
+            <!--创建图片容器 -->
+            <div class="news-img">
+                <a href="#">
+                    <img src="./img/网易新闻/1.jpg" alt="图片">
+                    <!-- 创建图片标题 -->
+                    <h3 class="img-title"><a href="#">得劲！越南网友当面拆穿美</a></h3>
+                </a>
+            </div>
+        <!-- 创建新闻列表 -->
+        <ul class="news-list">
+            <li>
+                <a href="#">继辽宁舰巡航台海 山东舰赴南海</a>
+            </li>
+            <li>
+                <a href="#">英航母威慑中俄？印媒：不靠谱</a>
+            </li>
+            <li>
+                <a href="#">中国空间站天和核心舱发射任务成功</a>
+            </li>
+            <li>
+                <a href="#">川航就"航班取消短信"回应称正展开调查</a>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

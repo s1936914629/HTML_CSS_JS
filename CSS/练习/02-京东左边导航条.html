@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>京东左侧导航条</title>
+    <link rel="stylesheet" href="./resets.css">
+    <style>
+        /* 设置背景，方便比较 */
+        body{
+            background-color: aqua;
+        }
+        /* 设置外部菜单 */
+        .list-nav{
+            height: 460px;
+            width: 160px;
+            background-color: azure;
+            /* 设置内边距 */
+            padding: 10px 0;
+        }
+        /* 设置内部菜单 */
+        .list-nav .ltem{
+            height:25px;
+            /* 让一个文字在父元素中居中，设置line-height设置一个和父元素height一样的值 */
+            line-height: 25px;
+            /* 设置左边内边距，让文字向内移动 */
+            padding-left:8px;
+        }
+        /* 设置内部鼠标移入 */
+        .ltem:hover{
+            background-color:#d9d9d9;
+        }
+        /* 设置超链接字体 */
+        .ltem a{
+        /* 设置字体大小 */
+            font-size:10px;
+            color:#333;
+        /* 去除下划线 */
+            text-decoration: none;
+        }
+        /* 设置超链接移入状态 */
+        .ltem a:hover{
+            color:#c81623;
+        }
+          /* 设置斜线 */
+          .line{
+            padding:0 1px;
+            font-size:12px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="list-nav">
+        <li class="ltem">
+            <a href="#">家用电器</a>
+        </li>
+
+        <li class="ltem">
+            <a href="#">手机</a>
+            <span class="line">/</span>
+            <a href="#">运营商</a>
+            <span class="line">/</span>
+            <a href="#">数码</a>
+        </li>
+
+        <li class="ltem">
+            <a href="#">电脑</a>
+            <span class="line">/</span>
+            <a href="#">办公</a>
+        </li>
+
+        <li class="ltem">
+            <a href="#">家居</a>
+            <span class="line">/</span>
+            <a href="#">家具</a>
+            <span class="line">/</span>
+            <a href="#">家装</a>
+            <span class="line">/</span>
+            <a href="#">厨具</a>
+        </li>
+
+        <li class="ltem">
+            <a href="#">男装</a>
+            <span class="line">/</span>
+            <a href="#">女装</a>
+            <span class="line">/</span>
+            <a href="#">童装</a>
+            <span class="line">/</span>
+            <a href="#">内衣</a>
+        </li>
+
+        <li class="ltem">
+            <a href="#">美妆</a>
+            <span class="line">/</span>
+            <a href="#">个护清洁</a>
+            <span class="line">/</span>
+            <a href="#">宠物</a>
+        </li>
+
+        <li class="ltem">
+            <a href="#">女鞋</a>
+            <span class="line">/</span>
+            <a href="#">箱包</a>
+            <span class="line">/</span>
+            <a href="#">钟表</a>
+            <span class="line">/</span>
+            <a href="#">珠宝</a>
+        </li>
+
+        <li class="ltem">
+            <a href="#">男鞋</a>
+            <span class="line">/</span>
+            <a href="#">运动</a>
+            <span class="line">/</span>
+            <a href="#">户外</a>
+        </li>
+
+        <li class="ltem">
+            <a href="#">房产</a>
+            <span class="line">/</span>
+            <a href="#">汽车</a>
+            <span class="line">/</span>
+            <a href="#">汽车用品</a>
+        </li>
+
+        <li class="ltem">
+            <a href="#">母婴</a>
+            <span class="line">/</span>
+            <a href="#">玩具乐器</a>
+        </li>
+
+        <li class="ltem">
+            <a href="#">食品</a>
+            <span class="line">/</span>
+            <a href="#">酒类</a>
+            <span class="line">/</span>
+            <a href="#">生鲜</a>
+            <span class="line">/</span>
+            <a href="#">特产</a>
+        </li>
+
+        <li class="ltem">
+            <a href="#">艺术</a>
+            <span class="line">/</span>
+            <a href="#">礼品鲜花</a>
+            <span class="line">/</span>
+            <a href="#">农资绿植</a>
+        </li>
+
+        <li class="ltem">
+            <a href="#">医药保健</a>
+            <span class="line">/</span>
+            <a href="#">计生情趣</a>
+        </li>
+
+        <li class="ltem">
+            <a href="#">图书</a>
+            <span class="line">/</span>
+            <a href="#">文娱</a>
+            <span class="line">/</span>
+            <a href="#">教育</a>
+            <span class="line">/</span>
+            <a href="#">电子书</a>
+        </li>
+
+        <li class="ltem">
+            <a href="#">机票</a>
+            <span class="line">/</span>
+            <a href="#">酒店</a>
+            <span class="line">/</span>
+            <a href="#">旅游</a>
+            <span class="line">/</span>
+            <a href="#">生活</a>
+        </li>
+
+        <li class="ltem">
+            <a href="#">理财</a>
+            <span class="line">/</span>
+            <a href="#">从筹</a>
+            <span class="line">/</span>
+            <a href="#">白条</a>
+            <span class="line">/</span>
+            <a href="#">保险</a>
+        </li>
+
+        <li class="ltem">
+            <a href="#">安装</a>
+            <span class="line">/</span>
+            <a href="#">维修</a>
+            <span class="line">/</span>
+            <a href="#" >清洗</a>
+            <span class="line">/</span>
+            <a href="#">二手</a>
+        </li>
+
+        <li class="ltem">
+            <a href="#">工业品</a>
+        </li>
+
+    </ul>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+/* 公共样式表 */
+.clearfix::before,
+.clearfix::after{
+    content:'';
+    display: table;
+    clear:both;
+}
+
+body{
+    font: 14px/1.5 Helvetica Neue,Helvetica,Arial,Microsoft Yahweh,Hiragana Sans GB,Heidi SC,WenQuantYi Micro Hei,sans-serif;
+    color:#333;
+    min-width: 1226px;
+}
+
+/* 设置中间容器的宽度 */
+.w{
+    width:1226px;
+    margin: 0 auto;
+}
